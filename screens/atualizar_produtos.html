@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_de_produtos.css">
+    <link rel="stylesheet" href="../assets/css/categoria-produtos.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
+    <link rel="stylesheet" href="../assets/css/buttons/button_transparente.css">
+    <link rel="stylesheet" href="../assets/css/buttons/button_blue.css">
+    <link rel="stylesheet" href="../assets/css/produtos_geral.css">
+    <link rel="stylesheet" href="../assets/css/formulario.css">
+    <link rel="stylesheet" href="../assets/css/produto.css">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <div class="cabecalho__home">
+                <a href="../index.html"><img class="imagem_logo" src="../assets/img/logo.png" alt="Imagem do Logo"></a>
+                <button class="cabecalho__button--login button--transparente"><a href="../screens/login.html">Login</a></button>
+                <form class="barra__pesquisa">
+                    <input class="input__pesquisa" type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?">
+                    <button class="cabecalho__button--pesquisa"></button>
+                </form>
+            </div>
+        </header>
+        <section class="cadastro__produtos">
+            <form action="" class="form--cadastro-produto" data-form="atualizaProduto">
+                <h2 class="form__title form__title--cadastro-produto">Atualizar produto</h2>
+                <div class="form__input-container">
+                    <input class="form__input" type="url" name="" id="" placeholder="URL da imagem" data-form="imagem">
+                    <span class="form__invalido">Campo inválido!</span>
+                </div>
+                <div class="form__input-container">
+                    <input class="form__input" type="text" name="" id="" placeholder="Categoria" data-form="categoria">
+                    <span class="form__invalido">Campo inválido!</span>
+                </div>
+                <div class="form__input-container">
+                    <input class="form__input" type="text" name="" id="" placeholder="Nome do produto" maxlength="20" data-form="nomeProduto">
+                    <span class="form__invalido">Campo inválido!</span>
+                </div>
+                <div class="form__input-container">
+                    <input class="form__input" type="text" name="" id="" placeholder="Preço do produto" data-form="preco">
+                    <span class="form__invalido">Campo inválido!</span>
+                </div>
+                <div class="form__input-container">
+                    <textarea class="form__input form__input--textarea" name="" id="" cols="30" rows="10" placeholder="Descrição do produto" maxlength="150" data-form="descricaoProduto"></textarea>
+                    <span class="form__invalido">Campo inválido!</span>
+                </div>
+                <button class="form__button--adicionar-produto button-blue">Atualizar</button>
+            </form>
+        </section>
+        <footer class="rodape__container">
+            <section class="menu__rodape">
+                <nav class="menu">
+                    <img src="../assets/img/logo.png" alt="Logo AluraGeek">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a href="#" class="menu__link">Quem somos nós</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Política de privacidade</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Programa de fidelidade</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Nossas lojas</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Quero ser franqueado</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="form">
+                    <h2 class="form__title">Fale conosco</h2>
+                    <div class="form__input-container">
+                        <input class="form__input" type="text" name="nome" id="nome" placeholder="Nome" maxlength="50" data-tipo="nome" required>
+                        <span class="form__invalido">Campo inválido!</span>
+                    </div>
+                    <div class="form__input-container">
+                        <textarea class="form__input form__input--textarea" name="mensagem" id="mensagem" cols="30" rows="10" style="resize: none" placeholder="Escreva sua mensagem" maxlength="200" data-tipo="mensagem" required></textarea>
+                        <span class="form__invalido">Campo inválido!</span>
+                    </div>
+                    <button class="form__button button-blue">Enviar mensagem</button>
+                </form>
+            </section>
+            <div class="rodape">
+                <p>Desenvolvido por <i>Fernando S. Santos</i></p>
+                <p>Copyright &copy; 2023</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../assets/js/pega_elementos.js"></script>
+    <script type="module" src="../controller/atualizar_produtos_controller.js"></script>
+</body>
+</html>
