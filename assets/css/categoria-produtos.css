@@ -1,0 +1,37 @@
+.categoria__produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categoria__produtos h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 0.8rem;
+    margin-top: 2rem;
+    margin-left: 5.6rem;
+}
+
+.categoria__produtos a {
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.categoria__produtos img {
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+}
+
+.seta-azul {
+    margin-right: 7rem;
+}
+
+.categoria__produtos--link {
+    color: #2A7AE4;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-right: 0.3rem;
+    text-decoration: none;
+}
+

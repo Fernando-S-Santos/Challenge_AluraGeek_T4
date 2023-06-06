@@ -1,0 +1,18 @@
+.login {
+    margin: auto;
+    margin-bottom: 4.75rem;
+    margin-top: 6.1rem;
+    max-width: 275px;
+    text-align: center;
+}
+
+.cabecalho__button--login a {
+    text-decoration: none;
+    color: var(--azul-claro)
+}
+
+@media screen and (min-width: 1440px) {
+    .login {
+        max-width: 423px;
+    }
+}

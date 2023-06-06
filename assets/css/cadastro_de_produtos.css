@@ -1,0 +1,23 @@
+.cadastro__produtos {
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 328px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cadastro__produtos {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        max-width: 704px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cadastro__produtos {
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        max-width: 559px;
+    }
+}

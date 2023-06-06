@@ -1,0 +1,20 @@
+:root {
+    --bg-branco: #F5F5F5;
+    --bg-azul: #EAF2FD;
+    --link-azul: #2A7AE4;
+    --azul-claro: #5595E9;
+    --azul-gelo: #D4E4FA;
+    --cor-texto-padrao: #464646;
+    --branco: #FFFFFF;
+    --cor-fundo: #E5E5E5;
+    --vermelho: #FF0000;
+    --cinza: #C8C8C8;
+    
+    --font-padrao: 'Raleway', sans-serif;
+}
+
+body {
+    color: var(--cor-texto-padrao);
+    font-family: var(--font-padrao);
+    background-color: var(--cor-fundo);
+}

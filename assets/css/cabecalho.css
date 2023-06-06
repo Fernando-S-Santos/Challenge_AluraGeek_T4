@@ -1,0 +1,116 @@
+.cabecalho, .cabecalho__home {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    gap: 2rem;
+    padding: 0.6rem;
+}
+
+.imagem_logo {
+    height: 40px;
+    width: 130px;
+    padding: 0 2.3rem;
+}
+
+.cabecalho__button--login {
+    width: 8.3rem;
+    margin-left: 20rem;
+}
+
+.cabecalho__button--login--admin {
+    padding: 0.75rem;
+    width: 10.3rem;
+}
+
+.input__pesquisa {
+    display: none;
+}
+
+.cabecalho__button--pesquisa {
+    background: none;
+    background-image: url('../img/lupa-preto.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.1rem;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0.6rem;
+    }
+
+    .cabecalho--sem-botao {
+        justify-content: flex-start;
+    }
+
+    .barra__pesquisa {
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-branco);
+        border-radius: 20px;
+    }
+
+    .barra__pesquisa--sem-botao {
+        margin-left: 2rem;
+    }
+
+    .input__pesquisa {
+        display: block;
+        background: none;
+        border: none;
+        box-sizing: border-box;
+        font-family: var(--fonte-padrao);
+        font-size: 0.9rem;
+        font-weight: 400;
+        height: 40px;
+        line-height: 1rem;
+        padding: 0.5rem 1rem;
+        width: 17rem;
+    }
+
+    .input__pesquisa::placeholder {
+        color: #A2A2A2;
+    }
+
+    .cabecalho__button--pesquisa {
+        background-image: url('../img/lupa-cinza.svg');
+        margin-right: 1rem;
+       
+    }
+
+    .cabecalho__button--login {
+        order: 1;
+        width: 10.4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        padding: 2rem 9.5rem;
+    }
+
+    .imagem_logo {
+        height: 50px;
+        width: 176px;
+    }
+
+    .input__pesquisa {
+        width: 30rem;
+    }
+
+    .input__pesquisa:focus {
+        outline: none;
+    }
+
+    .cabecalho__button--login {
+        display: flex;
+        order: 1;
+        width: 11.4rem;
+        padding: 0 2.5rem;
+    }
+}

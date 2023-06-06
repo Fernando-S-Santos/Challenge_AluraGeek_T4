@@ -1,0 +1,121 @@
+/*Produtos ADM*/
+.produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.produtos {
+    flex-grow: 1;
+    line-height: 1.5rem;
+    margin: auto;
+    max-width: 72rem;
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+.produtos__cabecalho {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 296px;
+    padding-left: 1rem;
+}
+
+.produtos__cabecalho--home {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 296px;
+    padding: 1rem;
+}
+
+.produtos__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.produtos__button {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10rem;
+}
+
+
+.produtos__container, .produtos__container--home  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produtos__container--home .cardHome {
+    display: none;
+}
+
+
+.produtos__container--home .cardHome:nth-child(-n+4) {
+    display: block;
+}
+
+@media screen and (min-width: 533px) {
+    .produtos__cabecalho--home {
+        max-width: 452px;
+    }
+}
+
+@media screen and (min-width: 689px) {
+    .produtos__cabecalho--home {
+        max-width: 608px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .produtos__cabecalho {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 524px;
+    }
+
+    .produtos__cabecalho--home {
+        max-width: 524px;
+    }
+}
+
+@media screen and (min-width: 785px) {
+    .produtos__cabecalho--home, .produtos__cabecalho {
+        max-width: 704px;
+    }
+}
+
+@media screen and (min-width: 965px) {
+    .produtos__cabecalho {
+        max-width: 884px;
+    }
+}
+
+@media screen and (min-width: 1145px) {
+    .produtos__cabecalho {
+        max-width: 1064px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .produtos {
+        padding: 4rem 0;
+    }
+
+    .produtos--home {
+        padding: 2rem 0;
+    }
+
+    .produtos__cabecalho--home, .produtos__cabecalho {
+        max-width: 1136px;
+    }
+
+    .produtos__container--home .cardHome:nth-child(-n+6) {
+        display: block;
+    }
+}

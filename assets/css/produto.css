@@ -1,0 +1,96 @@
+.produto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0 0.1rem;
+}
+
+.produto__img {
+    height: 174px;
+    width: 140px;
+}
+
+.produto__title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.produto__preco {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.produto__link {
+    color: var(--link-azul);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+/* verificar algumas propriedades: */
+.produto__edit {
+    background-color: transparent;
+    border-color: transparent;
+    left: 6.1rem;
+    position: absolute;
+    top: 0.2rem;
+    background-image: url('../../images/edit.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 15px;
+}
+
+.produto__edit:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.produto__delete {
+    background-color: transparent;
+    border-color: transparent;
+    left: 3.6rem;
+    position: absolute;
+    top: 0.2rem;
+    background-image: url('../../images/delete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 15px;
+}
+
+.produto__delete:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+    .produto__img {
+        width: 164px;
+    }
+
+    .produto__edit {
+        left: 7.6rem;
+    }
+
+    .produto__delete {
+        left: 5.1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .produto__img {
+        width: 176px;
+    }
+
+    .produto__edit {
+        left: 8.3rem;
+    }
+
+    .produto__delete {
+        left: 5.8rem;
+    }
+}

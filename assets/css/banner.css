@@ -1,0 +1,86 @@
+.banner {
+    position: relative;
+}
+
+.banner__img {
+    background-image: url('/assets/img/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 192px;
+    width: 100%;
+}
+
+.banner__promocional {
+    left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: 4.875rem;
+}
+
+.banner__title {
+    color: var(--branco);
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+
+.banner__descricao {
+    color: var(--branco);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.banner__button {
+    left: 1rem;
+    position: absolute;
+    top: 8.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__title {
+        font-size: 3.25rem;
+        line-height: 3.8125rem;
+    }
+
+    .banner__img {
+        height: 352px;
+    }
+
+    .banner__promocional {
+        left: 2rem;
+        padding-right: 2rem;
+        top: 10.0625rem;
+    }
+
+    .banner__descricao {
+        font-size: 1.375rem;
+        font-weight: 700;
+        line-height: 1.625rem;
+        margin-top: 1rem;
+    }
+
+    .banner__button {
+        left: 2rem;
+        top: 17.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner__img {
+        background-image: url('/AluraGeek/assets/img/banner@2x.png');
+    }
+
+    .banner__promocional {
+        left: 9.5rem;
+        padding-right: 9.5rem;
+        top: 9.375rem;
+    }
+
+    .banner__button {
+        left: 9.5rem;
+        top: 16.8125rem;
+    }
+}

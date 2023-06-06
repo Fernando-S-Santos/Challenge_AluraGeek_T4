@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_de_produtos.css">
+    <link rel="stylesheet" href="./assets/css/categoria-produtos.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/buttons/button_transparente.css">
+    <link rel="stylesheet" href="./assets/css/buttons/button_blue.css">
+    <link rel="stylesheet" href="./assets/css/produtos_geral.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/produto.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <div class="cabecalho__home">
+                <a href="./index.html"><img class="imagem_logo" src="./assets/img/logo.png" alt="Imagem do Logo"></a>
+                <button class="cabecalho__button--login button--transparente"><a href="./screens/login.html">Login</a></button>
+                <form class="barra__pesquisa">
+                    <input class="input__pesquisa" type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?">
+                    <button class="cabecalho__button--pesquisa"></button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="banner__img"></div>
+                <div class="banner__promocional">
+                    <h2 class="banner__title">Dezembro Promocional</h2>
+                    <p class="banner__descricao">Produtos selecionados com 33% de desconto</p>
+                </div>
+                <button class="banner__button button-blue">Ver Consoles</button>
+            </section>
+            <div class="produtos__container--home" data-produtos="starWars"></div>
+            <section class="categoria__produtos--home">
+                <div class="categoria__produtos">
+                    <h2 class="categoria__produtos--title">Star Wars</h2>
+                    <a href="#" class="categoria__produtos--link">Ver tudo</a>
+                    <img class="seta-azul" src="./assets/img/seta-azul.svg" alt="seta">
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars1.png" alt="Xícara do Stormtrooper">
+                        <h3 class="produto__title">Xícara do Stormtrooper</h3>
+                        <p class="produto__preco">R$ 65,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars2.png" alt="Produto Miniaturas">
+                        <h3 class="produto__title">Miniaturas</h3>
+                        <p class="produto__preco">R$ 50,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars3.png" alt="Miniaturas Yoda">
+                        <h3 class="produto__title">Miniaturas Yoda</h3>
+                        <p class="produto__preco">R$ 60,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars4.png" alt="Miniaturas do Stormtrooper">
+                        <h3 class="produto__title">Mini do Stormtrooper</h3>
+                        <p class="produto__preco">R$ 65,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars5.png" alt="Boneco Yoda">
+                        <h3 class="produto__title">Boneco Yoda</h3>
+                        <p class="produto__preco">R$ 60,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/starwars6.png" alt="Kylo Ren">
+                        <h3 class="produto__title">Kylo Ren</h3>
+                        <p class="produto__preco">R$ 60,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                </div>
+            </section>
+            <div class="produtos__container--home" data-produtos="consoles"></div>
+            <section class="categoria__produtos--home">
+                <div class="categoria__produtos">
+                    <h2 class="categoria__produtos--title">Consoles</h2>
+                    <a href="#" class="categoria__produtos--link">Ver tudo</a>
+                    <img class="seta-azul" src="./assets/img/seta-azul.svg" alt="seta">
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles1.png" alt="Controles">
+                        <h3 class="produto__title">Controles</h3>
+                        <p class="produto__preco">R$ 160,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles2.png" alt="Console e Controle">
+                        <h3 class="produto__title">Console e Controle</h3>
+                        <p class="produto__preco">a partir de R$ 210,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles3.png" alt="Consoles">
+                        <h3 class="produto__title">Consoles</h3>
+                        <p class="produto__preco">a partir de R$ 100,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles4.png" alt="Controle e acessórios">
+                        <h3 class="produto__title">Controle e acessórios</h3>
+                        <p class="produto__preco">a partir de R$ 260,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles5.png" alt="Console">
+                        <h3 class="produto__title">Console </h3>
+                        <p class="produto__preco">a partir de R$ 760,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/consoles6.png" alt="Game Boy Color">
+                        <h3 class="produto__title">Game Boy Color</h3>
+                        <p class="produto__preco">R$ 110,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                </div>
+            </section>
+            <div class="produtos__container--home" data-produtos="diversos"></div>
+            <section class="categoria__produtos--home">
+                <div class="categoria__produtos">
+                    <h2 class="categoria__produtos--title">Diversos</h2>
+                    <a href="#" class="categoria__produtos--link">Ver tudo</a>
+                    <img class="seta-azul" src="./assets/img/seta-azul.svg" alt="seta">
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos1.png" alt="Camisa Atari">
+                        <h3 class="produto__title">Camisa Atari</h3>
+                        <p class="produto__preco">R$ 65,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos2.png" alt="Camisa SNES">
+                        <h3 class="produto__title">Camisa SNES</h3>
+                        <p class="produto__preco">R$ 68,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos3.png" alt="Miniaturas de personagens">
+                        <h3 class="produto__title">Miniaturas de personagens</h3>
+                        <p class="produto__preco">a partir de R$ 70,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos4.png" alt="Outros produtos">
+                        <h3 class="produto__titulo">Outros produtos</h3>
+                        <p class="produto__preco">a partir de R$ 60,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos5.png" alt="Acessórios">
+                        <h3 class="produto__title">Acessórios</h3>
+                        <p class="produto__preco">a partir de R$ 60,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                    <div class="produto">
+                        <img class="produto__img" src="./assets/img/diversos6.png" alt="Bonecos e Miniaturas">
+                        <h3 class="produto__title">Bonecos e Miniaturas</h3>
+                        <p class="produto__preco">a partir de R$ 75,00</p>
+                        <a href="#" class="produto__link">Ver produto</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape__container">
+            <section class="menu__rodape">
+                <nav class="menu">
+                    <img src="./assets/img/logo.png" alt="Logo AluraGeek">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a href="#" class="menu__link">Quem somos nós</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Política de privacidade</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Programa de fidelidade</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Nossas lojas</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Quero ser franqueado</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="form">
+                    <h2 class="form__title">Fale conosco</h2>
+                    <div class="form__input-container">
+                        <input class="form__input" type="text" name="nome" id="nome" placeholder="Nome" maxlength="50" data-tipo="nome" required>
+                        <span class="form__invalido">Campo inválido!</span>
+                    </div>
+                    <div class="form__input-container">
+                        <textarea class="form__input form__input--textarea" name="mensagem" id="mensagem" cols="30" rows="10" style="resize: none" placeholder="Escreva sua mensagem" maxlength="200" data-tipo="mensagem" required></textarea>
+                        <span class="form__invalido">Campo inválido!</span>
+                    </div>
+                    <button class="form__button button-blue">Enviar mensagem</button>
+                </form>
+            </section>
+            <div class="rodape">
+                <p>Desenvolvido por <i>Fernando S. Santos</i></p>
+                <p>Copyright &copy; 2023</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="./assets/js/pega_elementos.js"></script>
+    <script type="module" src="./controller/produtos_home_controller.js"></script>
+</body>
+</html

@@ -1,0 +1,22 @@
+.button--transparente {
+    background: none;
+    border: 1px solid var(--link-azul);
+    color: var(--link-azul);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.button--transparente:hover {
+    background-color: var(--azul-gelo);
+}
+
+@media screen and (min-width: 1440px) {
+    .button--transparente {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        padding: 1rem;
+    }
+}

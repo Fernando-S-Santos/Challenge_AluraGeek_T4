@@ -1,0 +1,23 @@
+.button-blue {
+    background-color: var(--link-azul);
+    border: 1px solid var(--link-azul);
+    color: var(--branco);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.button-blue:hover {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
+}
+
+@media screen and (min-width: 1440px) {
+    .button-blue {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        padding: 1rem;
+    }
+}
